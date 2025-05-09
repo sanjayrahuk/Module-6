@@ -30,16 +30,26 @@ To create an **abstract class** named `Shape` with an **abstract method** `calcu
 
 ## 💻 Program
 ```
-from abc import ABC class type_shape(ABC): def calculate_area(self): pass
-
-class Rectangle(type_shape): length = 6 breadth = 4 def area(self): return self.length * self.breadth
-
-class Circle(type_shape): radius = 7 def area(self): return 3.14self.radius2 class Square(type_shape): length = 4 def area (self): return self.length2 class triangle: length = 5 width = 4 def area(self): return 1/2self.length*self.width
-
-r = Rectangle() c = Circle() s = Square() t = triangle() print("Area of a rectangle:", r.area()) print("Area of a circle:", c.area()) print("Area of a square:", s.area()) print("Area of a triangle:", t.area())
+from abc import ABC
+class Shape(ABC):
+   def calculate_area(self):
+        Pass
+class Rectangle(Shape):
+    length = 5
+    breadth =3
+def calculate_area(self):
+    print("Area of a rectangle:",self.length * self.breadth) class
+Circle(Shape):
+   radius = 4
+   def calculate_area(self):
+        print("Area of a circle:",3.14 * self.radius * self.radius)
+a=Rectangle()
+b=Circle()
+a.calculate_area()
+b.calculate_area()
 ```
 ## Output
-![440704600-32096426-a8a8-4c6b-8606-544ade4c4177](https://github.com/user-attachments/assets/9f2ba2fc-0cd8-4826-8bc9-5f7105dd0f19)
+![441121842-a9901421-3118-4ead-9d54-d6d0a47c944b](https://github.com/user-attachments/assets/24499a4e-13fc-4114-99b1-3a9568b86f93)
 
 ## Result
-Thus, the program is verified.
+Thus, the program has been successfully executed.
